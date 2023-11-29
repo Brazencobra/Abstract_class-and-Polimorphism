@@ -26,14 +26,13 @@ namespace Abstract_class_Polimorphism
             İstifadəçi 2 yazıb enter-ə click-ləsə Rectangular-in CalcArea methodu işə düşməlidir.
             İstifadəçi 0 yazıb enter-ə click-ləsə proqram sonlanmalıdı.*/
 
-            byte input2 = 0;
+            byte input = 0;
             do
             {
                 Console.WriteLine("1-Kvadratın sahesi hesablanacaq") ;
                 Console.WriteLine("2-Düzbucaqlının sahesi hesablanacaq") ;
                 Console.WriteLine("0-emeliyyat sonlanacaq") ;
-                byte input = Convert.ToByte(Console.ReadLine());
-                input2 = input;
+                input = Convert.ToByte(Console.ReadLine());
                 switch (input)
                 {
                     case 1:
@@ -56,7 +55,7 @@ namespace Abstract_class_Polimorphism
                         Console.WriteLine("Yanlis reqem daxil edildi");
                         break;
                 }
-            } while (input2 != 0);
+            } while (input != 0);
             
         }
     }
